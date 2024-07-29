@@ -21,6 +21,8 @@ def signup():
     username = data['username']
     password = data['password']
 
+    print(username)
+
     if not username or not password:
         return jsonify({'message': 'Username and password are required.'}), 400
     
